@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-51434">
+        <wsu:Created>2011-04-14T13:34:27.008Z</wsu:Created>
+      </wsu:Timestamp>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body>
+    <c:replyMessage xmlns:c="urn:schemas-cybersource-com:transaction-data-1.32">
+      <c:merchantReferenceCode>test</c:merchantReferenceCode>
+      <c:requestID>3027880665700008284268</c:requestID>
+      <c:decision>ACCEPT</c:decision>
+      <c:reasonCode>100</c:reasonCode>
+      <c:requestToken>Ahj7/wSRSEiSHhwUkqDYBJsPI7+NQBTYeR38amdB8gihDJpJlXR6S4lIoE5FISJIeHBSSoNg0EEB</c:requestToken>
+      <c:purchaseTotals>
+        <c:currency>GBP</c:currency>
+      </c:purchaseTotals>
+      <c:ccAuthReply>
+        <c:reasonCode>100</c:reasonCode>
+        <c:amount>1.00</c:amount>
+        <c:authorizationCode>1</c:authorizationCode>
+        <c:avsCode>U</c:avsCode>
+        <c:avsCodeRaw>00</c:avsCodeRaw>
+        <c:cvCode>2</c:cvCode>
+        <c:cvCodeRaw>3</c:cvCodeRaw>
+        <c:authorizedDateTime>2011-04-14T13:34:26Z</c:authorizedDateTime>
+        <c:processorResponse>0</c:processorResponse>
+      </c:ccAuthReply>
+      <c:ccAuthReversalReply>
+        <c:reasonCode>100</c:reasonCode>
+        <c:amount>1.00</c:amount>
+        <c:authorizationCode>1</c:authorizationCode>
+        <c:processorResponse>0</c:processorResponse>
+        <c:requestDateTime>2011-04-14T13:34:26Z</c:requestDateTime>
+      </c:ccAuthReversalReply>
+      <c:paySubscriptionCreateReply>
+        <c:reasonCode>100</c:reasonCode>
+        <c:subscriptionID>3027880665700008284268</c:subscriptionID>
+      </c:paySubscriptionCreateReply>
+    </c:replyMessage>
+  </soap:Body>
+</soap:Envelope>

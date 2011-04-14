@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+      <wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="Timestamp-7223638">
+        <wsu:Created>2011-04-13T15:18:15.790Z</wsu:Created>
+      </wsu:Timestamp>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body>
+    <c:replyMessage xmlns:c="urn:schemas-cybersource-com:transaction-data-1.32">
+      <c:merchantReferenceCode>test</c:merchantReferenceCode>
+      <c:requestID>3027078957550008284268</c:requestID>
+      <c:decision>ACCEPT</c:decision>
+      <c:reasonCode>100</c:reasonCode>
+      <c:requestToken>AhjzbwSRSDJRo3roAGjYBAKbDyOlz1zoAInwyaSZV0ekuJSAaAAA2wKn</c:requestToken>
+      <c:paySubscriptionRetrieveReply>
+        <c:reasonCode>100</c:reasonCode>
+        <c:approvalRequired>false</c:approvalRequired>
+        <c:automaticRenew>false</c:automaticRenew>
+        <c:cardAccountNumber>411111XXXXXX1111</c:cardAccountNumber>
+        <c:cardExpirationMonth>01</c:cardExpirationMonth>
+        <c:cardExpirationYear>2012</c:cardExpirationYear>
+        <c:cardType>001</c:cardType>
+        <c:city>London</c:city>
+        <c:country>GB</c:country>
+        <c:currency>GBP</c:currency>
+        <c:email>oliver@mail.com</c:email>
+        <c:endDate>99991231</c:endDate>
+        <c:firstName>TEST</c:firstName>
+        <c:frequency>on-demand</c:frequency>
+        <c:lastName>TEST</c:lastName>
+        <c:paymentMethod>credit card</c:paymentMethod>
+        <c:paymentsRemaining>0</c:paymentsRemaining>
+        <c:postalCode>SW113EP</c:postalCode>
+        <c:startDate>20110414</c:startDate>
+        <c:status>CURRENT</c:status>
+        <c:street1>1 High Street</c:street1>
+        <c:subscriptionID>3027025543640008284282</c:subscriptionID>
+        <c:title>test</c:title>
+        <c:totalPayments>0</c:totalPayments>
+      </c:paySubscriptionRetrieveReply>
+    </c:replyMessage>
+  </soap:Body>
+</soap:Envelope>

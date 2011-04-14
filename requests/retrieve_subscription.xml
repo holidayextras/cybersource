@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+  <s:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" s:mustUnderstand="1">
+      <wsse:UsernameToken>
+        <wsse:Username>hextras_test1</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">mSfmoi3/j/HnD7+jP1LmjIvZI/gkf8AnyfxZFtSyZOnQZQRbq9zyDFXkYgdBISqNmEElIwAy8BLCYAFzfqLbDeKcSWbkUmd+jHMCCwHojzG/vi39S7mflgtGt/O9wfE02AFJ6hDZqC9lUAO19QDcMQHd3deGJzOvoeBWE9bnnuoUqWWZga93YUzBgo8/UuaMi9kj+CR/wCfJ/FkW1LJk6dBlBFur3PIMVeRiB0EhKo2YQSUjADLwEsJgAXN+otsN4pxJZuRSZ36McwILAeiPMb++Lf1LuZ+WC0a3873B8TTYAUnqENmoL2VQA7X1ANwxAd3d14YnM6+h4FYT1uee6g==</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </s:Header>
+  <s:Body xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <requestMessage xmlns="urn:schemas-cybersource-com:transaction-data-1.32">
+      <merchantID>hextras_test1</merchantID>
+      <merchantReferenceCode>test</merchantReferenceCode>
+      <clientLibrary>Ruby Active Merchant</clientLibrary>
+      <clientLibraryVersion>1.0</clientLibraryVersion>
+      <clientEnvironment>Linux</clientEnvironment>
+      <recurringSubscriptionInfo>
+        <subscriptionID>3026187276810008284282</subscriptionID>
+      </recurringSubscriptionInfo>
+      <paySubscriptionRetrieveService run="true"/>
+    </requestMessage>
+  </s:Body>
+</s:Envelope>
