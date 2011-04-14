@@ -1,5 +1,7 @@
-PATH
-  remote: /Users/olivernightingale/code/active_merchant
+GIT
+  remote: git://github.com/holidayextras/active_merchant.git
+  revision: 4758c21fafd75ca9f6c156d508263c517d5edf97
+  branch: cybersource-subscriptions
   specs:
     activemerchant (1.12.1)
       activesupport (>= 2.3.8)

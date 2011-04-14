@@ -1,4 +1,4 @@
 # A sample Gemfile
 source "http://rubygems.org"
-gem "activemerchant", :path => "/Users/olivernightingale/code/active_merchant"
+gem "activemerchant", :git => "git://github.com/holidayextras/active_merchant.git", :branch => "cybersource-subscriptions"
 gem "i18n"
