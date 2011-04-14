@@ -52,3 +52,11 @@ subscription_options = {
 
 # Delete a subscription & print result
 # puts gateway.delete_subscription(123, :order_id => "whatever").inspect
+
+# Create subscription, make an authorization against it and then capture the authorized funds
+# response = gateway.create_subscription(credit_card, subscription_options)
+# subscription_id = response.params["requestID"]
+# auth = gateway.auth_subscription(100, subscription_id, subscription_options)
+# capture_response = gateway.capture(100, auth.authorization, subscription_options)
+# 
+# puts capture_response.inspect
